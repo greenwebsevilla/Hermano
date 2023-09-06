@@ -36,7 +36,7 @@ DECLARE_MUSIC(cemetery);
 DECLARE_MUSIC(deadboy);
 DECLARE_MUSIC(selva);
 // DECLARE_MUSIC(piramide_dentro);
-
+ 
 struct MapInfoBanked {
 	UINT8 bank;
 	struct MapInfo* map;
