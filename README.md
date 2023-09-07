@@ -11,7 +11,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
 
-GRAPHICS LICENCE
+GRAPHICS LICENSE
 ----------------
 The graphics and music (sprites, tiles, ugd) has CC BY-NC-ND license: Credit must be given, Non-commercial distribution only, No derivatives or adaptations of the work are permitted.
 
