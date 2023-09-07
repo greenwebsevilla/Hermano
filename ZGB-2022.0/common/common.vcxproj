@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugColor|Win32">
+      <Configuration>DebugColor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseColor|Win32">
+      <Configuration>ReleaseColor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BankManager.h" />
+    <ClInclude Include="include\Banks\SetAutoBank.h" />
+    <ClInclude Include="include\Fade.h" />
+    <ClInclude Include="include\gbt_player.h" />
+    <ClInclude Include="include\Keys.h" />
+    <ClInclude Include="include\main.h" />
+    <ClInclude Include="include\MapInfo.h" />
+    <ClInclude Include="include\Math.h" />
+    <ClInclude Include="include\MetaSpriteInfo.h" />
+    <ClInclude Include="include\Music.h" />
+    <ClInclude Include="include\OAMManager.h" />
+    <ClInclude Include="include\Palette.h" />
+    <ClInclude Include="include\Scroll.h" />
+    <ClInclude Include="include\SGB.h" />
+    <ClInclude Include="include\Sound.h" />
+    <ClInclude Include="include\Sprite.h" />
+    <ClInclude Include="include\SpriteManager.h" />
+    <ClInclude Include="include\SRAM.h" />
+    <ClInclude Include="include\Stack.h" />
+    <ClInclude Include="include\TilesInfo.h" />
+    <ClInclude Include="include\Vector.h" />
+    <ClInclude Include="include\Print.h" />
+    <ClInclude Include="include\ZGBMain_Init.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BankManager.c" />
+    <ClCompile Include="src\Fade.c" />
+    <ClCompile Include="src\Fade_b.c" />
+    <ClCompile Include="src\Keys.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\Math.c" />
+    <ClCompile Include="src\Music.c" />
+    <ClCompile Include="src\OAMManager.c" />
+    <ClCompile Include="src\Scroll.c" />
+    <ClCompile Include="src\SGB.c" />
+    <ClCompile Include="src\Sound.c" />
+    <ClCompile Include="src\Sprite.c" />
+    <ClCompile Include="src\SpriteManager.c" />
+    <ClCompile Include="src\SRAM.c" />
+    <ClCompile Include="src\Stack.c" />
+    <ClCompile Include="src\Vector.c" />
+    <ClCompile Include="src\Print.c" />
+    <ClCompile Include="src\ZGBMain_Init.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Makefile" />
+    <None Include="src\MakefileCommon" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A820F4AF-3BAD-4781-86FB-C055E213A91D}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugColor|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseColor|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="gameboy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugColor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="gameboy.props" />
+    <Import Project="color.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="gameboy.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseColor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="gameboy.props" />
+    <Import Project="color.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugColor|Win32'">
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseColor|Win32'">
+    <NMakeOutput />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
